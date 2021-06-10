@@ -9,6 +9,9 @@ import java.util.Formatter;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
+/**
+ * HmacSha1 算法封装
+ */
 public class HmacSha1Signature {
 
     private HmacSha1Signature() {
@@ -52,9 +55,9 @@ public class HmacSha1Signature {
 
 
     /**
-     * Computes RFC 2104-compliant HMAC signature. * @param data The data to be
-     * signed.
+     * Computes RFC 2104-compliant HMAC signature.
      *
+     * @param data The data to be signed.
      * @param key The signing key.
      * @return The Base64-encoded RFC 2104-compliant HMAC signature.
      * @throws java.security.SignatureException when signature generation fails
