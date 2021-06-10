@@ -6,6 +6,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
+ * MD5 封装
+ *
  * Created by chiclaim@google.com
  */
 public class MD5 {
