@@ -167,17 +167,18 @@ public class HttpUploadSls {
             connection.setDoInput(true);
             connection.setDoOutput(true);
 
-            connection.getOutputStream().write(compressContent);
-            connection.getOutputStream().flush();
+            os = connection.getOutputStream();
+            os.write(compressContent);
+            os.flush();
             if (connection.getResponseCode() == 200) {
                 System.out.println("日志上传成功");
             } else {
                 InputStream in = connection.getErrorStream();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in));
                 String err = reader.readLine();
+                reader.close();
                 // 格式： {"errorCode":"Unauthorized","errorMessage":"The security token you provided has expired"}
                 System.err.println("日志上传失败, code:" + connection.getResponseCode() + " ,err:" + err);
-                reader.close();
             }
         } catch (IOException e) {
             e.printStackTrace();
