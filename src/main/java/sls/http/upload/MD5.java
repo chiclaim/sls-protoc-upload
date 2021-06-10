@@ -1,4 +1,4 @@
-package com.zmsoft.log.http.upload;
+package sls.http.upload;
 
 import java.io.IOException;
 import java.io.InputStream;
