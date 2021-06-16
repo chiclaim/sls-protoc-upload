@@ -64,3 +64,11 @@ message LogGroupList
 ## 最后
 
 如果大家也有这方面的需求，可以直接基于本仓库进行修改，节省大量的时间。
+
+## 文档
+
+- [概览](https://help.aliyun.com/document_detail/29007.html) 
+- [服务入口](https://help.aliyun.com/document_detail/29008.html) 
+- [PutLogs](https://help.aliyun.com/document_detail/29026.htm)
+- [数据编码方式](https://help.aliyun.com/document_detail/29055.html)
+- [请求签名](https://www.alibabacloud.com/help/zh/doc-detail/29012.htm)
