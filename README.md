@@ -6,7 +6,7 @@ Aliyun SLS SDK 中的 Java 版本 SDK 是给 Java 后端使用的，没有给鸿
 
 SLS 日志服务支持使用 Protocol Buffer 格式作为标准的日志写入格式。
 
-Protocol Buffer格式用于结构化数据交换格式，当用户需要写入日志时，需要把原始日志数据序列化成如下格式的 Protocol Buffer 数据流，然后才能通过 API 写入服务端。
+Protocol Buffer 格式用于结构化数据交换格式，当用户需要写入日志时，需要把原始日志数据序列化成如下格式的 Protocol Buffer 数据流，然后才能通过 API 写入服务端。
 
 SlsLog.proto :
 
